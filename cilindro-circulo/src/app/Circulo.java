@@ -14,7 +14,7 @@ public class Circulo {
     public double yc;
     public double raio;
     
-    Circulo(){
+    Circulo(double xc, double yc, double raio){
     this.xc = xc;
     this.yc = yc;
     this.raio = raio;
