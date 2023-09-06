@@ -10,10 +10,10 @@ package app;
  * @author aluno
  */
 public class Cilindro {
-    Circulo raio = new Circulo();
+
     public double altura;
     
-    public Cilindro(){
+    public Cilindro(double altura){
         this.altura = altura;
     }
     public double area(double areaBase, double comprimento){
@@ -22,7 +22,7 @@ public class Cilindro {
     public double volume(double areaBase){
         return areaBase * altura;
     }
-    public String exibeCilindro(){
-        return "Dados do Cilindro\n" + "\nRaio = " + raio +  "\nAltura = " + altura;
+    public String exibeCilindro(double raio){
+        return "Dados do Cilindro:\n" + "\nRaio = " + raio +  "\nAltura = " + altura;
     }
 }
